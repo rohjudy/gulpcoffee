@@ -1,0 +1,240 @@
+body {
+    background-color: #082B59;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* make images flexible */
+img {
+    max-width: auto;
+    background-color: transparent;
+    padding: 0;
+    margin:0;
+    border-radius: 10px;
+}
+
+a {
+    color: #59331d;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 10px solid #d98555;
+}
+
+/* navbar styling */
+nav {
+    margin: 0 1rem;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+    /* border: 1px solid black;*/
+}
+
+/* max width on the image in pixels */
+nav .logo img {
+    max-width: 200px;
+    /*max-width: 150px;*/
+}
+
+/* flex basis on the image container, li */
+nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    display: grid;
+    flex-flow: column wrap;
+    margin: 0 30% 0 30%;
+}
+
+nav a:hover {
+    color: #d98555;
+}
+
+/* establishes a white background */
+.main-bkgd {
+    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+}
+
+/* sits inside of the white background, centered */
+.main {
+    max-width: 1200px;
+    min-width: 576px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article {
+    flex-basis: 73%;
+}
+
+figure {
+    margin: 1rem 0 0 0;
+    flex-basis: 25%;
+    /*background-color: #59331d;*/
+    border-radius: 10px;
+}
+
+figure img {
+    border-radius: 10px;
+    /*text-align: center;*/
+    margin:0;
+    padding:0;
+    justify-content:space-around;
+}
+
+/*figcaption {
+    color: #f2f2f2;
+    padding: 0.5rem;
+  }*/
+.button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+}
+
+.button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+}
+
+footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+footer a {
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-flow: row wrap; 
+    }
+    h1 {
+        display: flex;
+        flex-flow: row;
+        padding: 0;
+        margin: 0 0 1rem 0;
+    }
+    section {
+        display: flex;
+        flex-flow: row;
+    }
+    figure {
+        flex-basis: auto;
+        border-radius: 10px;
+    }
+    .productfigure {
+        display: grid;
+    }
+    .pourovercoffeepicture {
+        min-width: 300px;
+        height:fit-content;
+    }
+    figure img {
+        display: flex;
+        flex-flow: row;
+        margin: 0 0 0 4rem;
+        padding: 0;
+    }
+    article {
+        flex-basis: 25rem;
+        padding-left: 4rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+    nav ul {
+        justify-content: flex-end;
+        margin: 0;
+    }
+    nav a {
+        justify-content:center;
+    }
+    nav .logo {
+        flex-basis: auto;
+        padding: 0;
+        margin-right:auto;
+    }
+    .productfigure {
+        display: grid;
+    }
+    p {
+        display:flex;
+        flex-flow: column wrap;
+    }
+    img {
+        margin: 0;
+        padding: 0;
+    }
+    .menuphoto {
+        max-width: auto;
+        margin-right:4rem;
+    }
+    .contactusparagraph {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+}
